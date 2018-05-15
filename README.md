@@ -1,3 +1,7 @@
+*This branch will open anything other than chrome://newtab/ in "popup mode" - no bars at all*
+
+--
+
 Detab is a Google Chrome/Chromium extension that disables the tab functionality by detaching newly created tabs in new windows.
 
 It is made with tiling window managers in mind, that usually have native tab management.
