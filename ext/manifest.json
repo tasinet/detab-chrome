@@ -1,7 +1,7 @@
 {
   "name": "Detab - Detach new tabs upon creation",
   "short_name": "Detab",
-  "version": "0.0.4",
+  "version": "0.1.1",
   "manifest_version": 2,
   "description": "Detaches tabs whenever they are created",
   "homepage_url": "http://tasinet.gr/chrome/detab",
@@ -14,10 +14,22 @@
   "default_locale": "en",
   "background": {
     "scripts": [
+      "src/options_custom/lib/store.js",
       "src/bg/background.js"
     ],
     "persistent": false
   },
   "permissions": [
-  ]
+      "tabs"
+  ],
+  "commands": {
+    "toggle-popup-mode": {
+  	"suggested_key": {
+  	  "default": "Ctrl+Shift+L",
+  	  "mac": "Command+Shift+L"
+  	},
+  	"description": "Show/hide toolbars"
+    }
+  },
+  "options_page": "src/options_custom/index.html"
 }
