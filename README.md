@@ -8,3 +8,7 @@ What's under the hood? Literally two lines:
         chrome.windows.create({tabId: tab.id})
     });
 
+It is also on the [Chrome Web Store](https://chrome.google.com/webstore/detail/detab-detach-new-tabs-upo/chffoojfmdlemhkjmcgbdkaheoenmfkk).
+
+To install from here, drag-drop the .crx file to your chrome://extensions page.
+
