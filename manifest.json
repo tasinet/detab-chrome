@@ -1,7 +1,7 @@
 {
   "name": "Detab - Detach new tabs upon creation",
   "short_name": "Detab",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "Detaches tabs whenever they are created",
   "homepage_url": "http://tasinet.gr/chrome/detab",
