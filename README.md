@@ -12,3 +12,6 @@ What's under the hood? Literally two lines:
         chrome.windows.create({tabId: tab.id})
     });
 
+--
+
+To install, open chrome://extensions and drag-drop the .crx file there.
