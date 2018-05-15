@@ -1,3 +1,8 @@
 chrome.tabs.onCreated.addListener( tab => {
-    chrome.windows.create({tabId: tab.id, type: 'popup'})
+    const options = {tabId: tab.id};
+
+    if (tab.url !== 'chrome://newtab/')
+        options.type = 'popup';
+
+    chrome.windows.create(options);
 });

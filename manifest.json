@@ -19,5 +19,6 @@
     "persistent": false
   },
   "permissions": [
+      "tabs"
   ]
 }
