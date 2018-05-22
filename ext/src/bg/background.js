@@ -15,11 +15,11 @@ chrome.tabs.onCreated.addListener( tab => {
 });
 
 openNormal = (tab) => {
-    chrome.windows.create({tabId: tab.id})
-}
+    chrome.windows.create({tabId: tab.id, focused: tab.active});
+};
 
 openPopup = (tab) => {
-    chrome.windows.create({tabId: tab.id, type: 'popup'})
+    chrome.windows.create({tabId: tab.id, type: 'popup', focused: tab.active});
 }
 
 toggleActiveTab = () => {
